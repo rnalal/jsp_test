@@ -1,0 +1,9 @@
+ex02.html
+
+개발자 도구에서
+chrome console 에서 실행함
+
+document.getElementById("h1");
+document.getElementById("a");
+
+document.getElementsByClassName("test");

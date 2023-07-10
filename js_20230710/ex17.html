@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>script study - 1</p>
+    <p>script study - 2</p>
+    <p>script study - 3</p>
+    <script>
+        const ps = document.querySelectorAll("p");
+        ps.forEach((element) => {
+            element.addEventListener("click", function(){
+            // [object HTMLParagraphElement]
+            // arert(this);
+            // 현재 this 는 이벤트가 적용되는 객체 : p tag element
+            if(this.style.color == 'blue'){
+                this.style.color = 'orange'
+            } else {
+                this.style.color = 'blue';
+            }
+            })
+        });
+    </script>
+</body>
+</html>

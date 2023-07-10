@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- checkbox 에 javascript 적용하기 -->
+    <form>
+        <label>
+            <input type="checkbox" value="apple">사과
+        </label>
+        <label>
+            <input type="checkbox" value="watermelon">수박
+        </label>
+        <label>
+            <input type="checkbox" value="mango">망고
+        </label>
+        <label>
+            <input type="checkbox" value="strawberry">딸기
+        </label>
+    </form>
+
+    <script>
+        // input 태그의 type 속성의 값이 checkbox 인 element 들 가져오기
+        const inputs = document.querySelectorAll("input[type='checkbox']")
+        input.forEach((element) => {
+            // check 가 된 input 엘리먼트의 value 출력하기
+            if(element.checked){
+                console.log(element.value);
+            }
+        });
+        // 모두 check 하기
+            input.forEach((element) => {
+            element.checked = true;
+        });
+    </script>
+</body>
+</html>

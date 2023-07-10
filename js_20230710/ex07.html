@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- node 추가 삭제 -->
+    <h1>javascript node</h1>
+
+    <p></p>
+
+    <script>
+        // a tag 생성하기
+        const element1 = document.createElement("a");
+        // text node 생성하기
+        const textNode1 = gdocument.createTextNode("네이버");
+        // 속성(attribute) node 추가하기
+        const hrefAttr1 = document.createAttribute("href");
+        // href 속성에 url 설정하기
+        hrefAttr1.value = "http://www.naver.com";
+        
+        // a tage 에 text 추가하기
+        element1.appendChild(textNode1);
+        // a tag 에 href 속성 추가하기
+        element1.setAttributeNode(hrefAttr1);
+    
+        // body 에 자식 node 로 a tag 추가하기
+        document.body.appendChild(element1);
+
+        // h1 태그 삭제하기
+        const elementH1 = 
+        document.querySelectorelementH1.parentNode.removeChild(element1);
+
+        // console.log(bodyChildren);
+
+        bodyChildren.forEach((node)=>{
+            console.log(node.nodeName);
+            // nodeNAme 인 p
+        })
+
+
+    </script>
+
+</body>
+</html>
